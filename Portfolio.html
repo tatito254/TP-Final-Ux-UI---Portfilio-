@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Lautaro Hernandez</title>
+  <style>
+    :root{--bg:#f3f4f6;--card:#ffffff;--muted:#6b7280;--accent:#0f172a}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:var(--accent);line-height:1.5}
+    .container{max-width:880px;margin:28px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 12px;background:linear-gradient(#fff, #fff);border-radius:8px}
+    .brand{font-weight:700;font-size:20px}
+    nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-size:14px}
+
+    .hero{display:grid;grid-template-columns:1fr 160px;gap:24px;align-items:center;margin-top:18px}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{margin:6px 0 0;color:var(--muted)}
+    .avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(2,6,23,0.08);border:6px solid #fff}
+
+    .section{margin-top:22px;background:var(--card);padding:18px;border-radius:10px}
+    .section h2{margin:0 0 12px;font-size:18px}
+    .about{display:flex;gap:16px}
+    .about p{margin:0;color:var(--muted)}
+
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .project{padding:12px;border-radius:8px;background:#fbfdff;border:1px solid #eef2f6}
+    .project img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+    .project h3{margin:8px 0 6px;font-size:15px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+
+    .experience-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+    .exp-thumb{width:100px;height:70px;border-radius:6px;object-fit:cover}
+    .exp-body h4{margin:0 0 6px;font-size:15px}
+    .exp-body p{margin:0;color:var(--muted);font-size:13px}
+
+    .skills{display:flex;gap:8px;flex-wrap:wrap}
+    .skill{background:#eef2ff;padding:8px 10px;border-radius:999px;font-size:13px;color:#0b3b82}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:700px){
+      .hero{grid-template-columns:1fr 120px}
+      .projects{grid-template-columns:1fr}
+      .container{padding:16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">Lautaro Hernandez</div>
+      <nav>
+        <a href="#about">Acerca de mi</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Lautaro Hernandez</h1>
+        <p>Web developer &amp; Hardware</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:center;">
+        <!-- usar la imagen subida como avatar -->
+        <img class="avatar" src="imagenes/Foto Perfil.png" alt="Foto de Lautaro Hernandez">
+      </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Acerca de mi</h2>
+        <div class="about">
+        <div>
+        <p>Hola mi nombre es Lautaro pero mis amigos me llaman Toro. Soy una persona proactiva, metodia y con un toc execivo con la puntualidad y hacer las cosas en tiempo y forma. Me gusta ser projo y organizado en mi vida. 
+        Desde que entre a la especialidad de Tecnoligia de las Informacion y las Comunicaciones me di cuenta que me gustaba el Hardware y el diseño enfocado en paginas web y aplicaciones.
+        En mi tiempo libre me gusta tocar la guitarra y hacer mucho deporte, como Rugby y Boxeo ademas de ir al gimnasio.
+        </p>
+        </div>
+        </div>
+        </section>
+
+    <section id="projects" class="section">
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <article class="project">
+          <img src="imagenes/APDC.png" alt="Proyecto 1">
+          <h3>APDC: Aplicacion para Personas con Discapacidad Cognitiva (2023)</h3>
+          <p>La aplicacion tiene como funcion fomentar el uso de la memoria para resonas con alzheimer y adultos mayores en general.
+            A treaves de juegos, el Simon y juegos personalizados como el memotes y unir con flechas con imajenes y nombres de seres queridos del usiario ayudar y ejercitar la memoria.</p>
+        </article>
+
+        <article class="project">
+          <img src="imagenes/AutonomIA.png" alt="Proyecto 2">
+          <h3>AutonomIA: Lentes de vision artificial (Actualmente)</h3>
+          <p>Nuestro proyecto consiste en un software que permitirá devolver su autonomía a las personas con discapacidad visual parcial o total. Estas podrán detectar objetos y obstáculos, leer textos, encontrar objetos perdidos, entre otras tantas funciones. El dispositivo contará con una cámara, un audífono y un micrófono que permitirán al usuario dar órdenes y recibir feedback por parte del dispositivo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="formacion" class="section">
+      <h2>Formacion</h2>
+      <div class="formacion-item">
+        <img class="for-thumb" src="imagenes/Ort.png" alt="Secundario ORT sede Belgrano">
+        <div class="for-body">
+          <h4>Secundario Ort — Sede Belgrano</h4>
+          <p>Entré en Septimo grado, en pandemia, y estudio hasta la fecha, la escuela ORT cuanta con un sistema de especializaciones a partir de trecer año, mi eleccion fue TIC (Tegnologia de las Informaciones y Comunicaciones) que a lo largo de los años se trato sobre distintos lenguajes de programacion, diseño web y 3D, Front end y Back end, Hardware, Sistemas Operativos y Redes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="futuro" class="section">
+        <h1>Futuro</h1>
+        <h2>Carreras Posibles:</h2>
+        <div class="futuro">
+          <article class="futuro">
+            <h4>- FADU: Arquitectura</h4>
+            <p>Tomo como opcion principal estudiar arquitectura ya que me gusta el diseño de edificios y el urbanismo es algo que me facina. Como no, la mejor opcion es la UBA, mas alla deue sea publica, lo que me ahorra dinero en ese sentido y orientarlo a otros aspectos de mi  vida, cuenta con un gran nivel educativo.</p>
+          </article>
+  
+          <article class="futuro">
+            <h4>- UADE: Comercio exterior</h4>
+            <p>Como opcion secundaria podria estudiar comercio exterior ya que tiene una mayor salida laborar y un familiar me puede ayudar con esta materia devido a que estuido lo mism. La UADE es una facultad privada, y es menos accecible que FADU devido a la legania.</p>
+          </article>
+        </div>
+
+        <h2>Trabajo</h2>
+        <div class="futurp-item">
+        <div class="fut-body">
+          <h4>¿Por que trabajar y estudiar a la vez?</h4>
+          <p>Como a mi me gusta tener mi propio dinero y gastarlo en lo que me gusta, se me hace esencian tener una fuente de ingresos. La idea principal es trabajar con una amiga de mi madre con la cual ya trabajé en el veran con ella, lo que hice y probablemente hare es manejar el stock en la empresa que  importa y exportya productos electricos.</p>
+        </div>
+        </div>
+      </section>
+
+    <section class="section">
+      <h2>Futuro</h2>
+      <div class="skills">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Responsive</span>
+        <span class="skill">A11y</span>
+      </div>
+    </section>
+
+    <footer id="contact">© 2025 Lautaro Hernandez — <a href="mailto:lautipalumbo@gmail.com">lautipalumbo@gmail.com</a></footer>
+  </div>
+</body>
+</html>
